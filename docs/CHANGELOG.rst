@@ -2,6 +2,21 @@
 Changelog
 =========
 
+`1.0.1 <https://github.com/dafyddj/dehydrated-formula/compare/v1.0.0...v1.0.1>`_ (2020-08-17)
+-------------------------------------------------------------------------------------------------
+
+Continuous Integration
+^^^^^^^^^^^^^^^^^^^^^^
+
+
+* **windows:** test using GitHub Actions (\ `96a77d9 <https://github.com/dafyddj/dehydrated-formula/commit/96a77d96264d90d653a47bc0052c32c7153cf022>`_\ )
+
+Tests
+^^^^^
+
+
+* **windows:** add basic test for subcomponent ``git`` (\ `314a26f <https://github.com/dafyddj/dehydrated-formula/commit/314a26f15cba6147c243e6e0e0d296cebda7811b>`_\ )
+
 1.0.0 (2020-08-17)
 ------------------
 
