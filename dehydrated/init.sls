@@ -2,7 +2,8 @@
 # vim: ft=sls
 
 include:
-  - .package
-  - .config
-  - .service
-  - .subcomponent
+  - .git
+#  - .package
+#  - .config
+#  - .service
+#  - .subcomponent

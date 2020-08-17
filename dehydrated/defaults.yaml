@@ -2,6 +2,9 @@
 # vim: ft=yaml
 ---
 dehydrated:
+  git:
+    pkg:
+      name: git
   pkg:
     name: dehydrated
   rootgroup: root

@@ -16,6 +16,6 @@ provisioner:
   init_environment: >
     C:\salt\salt-call --local state.single file.managed
     C:\Users\kitchen\AppData\Local\Temp\kitchen\srv\salt\win\repo-ng\salt-winrepo-ng\git.sls
-    source=https://github.com/saltstack/salt-winrepo-ng/raw/master/git.sls
+    source=https://github.com/dafyddj/salt-winrepo-ng/raw/git-v2.28.0/git.sls
     skip_verify=True makedirs=True;
     exit 0
