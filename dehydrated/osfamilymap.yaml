@@ -12,23 +12,23 @@
 ---
 Debian:
   pkg:
-    name: TEMPLATE-debian
-  config: /etc/TEMPLATE.d/custom.conf
+    name: dehydrated-debian
+  config: /etc/dehydrated.d/custom.conf
 
 RedHat:
   pkg:
-    name: TEMPLATE-redhat
-  config: /etc/TEMPLATE.conf
+    name: dehydrated-redhat
+  config: /etc/dehydrated.conf
 
 Suse:
   pkg:
-    name: TEMPLATE-suse
+    name: dehydrated-suse
 
 Gentoo: {}
 
 Arch:
   pkg:
-    name: TEMPLATE-arch
+    name: dehydrated-arch
   service:
     name: service-arch
 
