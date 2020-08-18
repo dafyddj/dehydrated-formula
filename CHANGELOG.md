@@ -1,5 +1,17 @@
 # Changelog
 
+# [1.1.0](https://github.com/dafyddj/dehydrated-formula/compare/v1.0.1...v1.1.0) (2020-08-18)
+
+
+### Features
+
+* **dehydrated:** add a state to install the script ([911d2d5](https://github.com/dafyddj/dehydrated-formula/commit/911d2d5cd70fcc8d55a8b61e9a2c2bb4664fb08e))
+
+
+### Tests
+
+* **git:** use `inputs` for Git package name ([2e15774](https://github.com/dafyddj/dehydrated-formula/commit/2e1577477ae5fad1b1ba568c0dd5360ef1cbfe5d))
+
 ## [1.0.1](https://github.com/dafyddj/dehydrated-formula/compare/v1.0.0...v1.0.1) (2020-08-17)
 
 
