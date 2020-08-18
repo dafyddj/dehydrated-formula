@@ -5,6 +5,6 @@
 {%- set tplroot = tpldir.split('/')[0] %}
 {%- from tplroot ~ "/map.jinja" import dehydrated with context %}
 
-dehydrated-git-package-install-pkg-installed:
+dehydrated-git-install-pkg-installed:
   pkg.installed:
     - name: {{ dehydrated.git.pkg.name }}
