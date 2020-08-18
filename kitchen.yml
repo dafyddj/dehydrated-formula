@@ -166,3 +166,5 @@ suites:
         - path: test/integration/default
       controls:
         - dehydrated-git-install
+      inputs:
+        git_pkg_name: Git
