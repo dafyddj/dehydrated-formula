@@ -166,5 +166,9 @@ suites:
         - path: test/integration/default
       controls:
         - dehydrated-git-install
+        - dehydrated-script-install
       inputs:
+        dehydrated_file_owner: BUILTIN\Administrators
+        dehydrated_script_content: VERSION="0.6.4"
+        dehydrated_script_path: C:\Program Files\Git\usr\bin\dehydrated
         git_pkg_name: Git

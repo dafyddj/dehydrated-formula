@@ -2,11 +2,19 @@
 # vim: ft=yaml
 ---
 dehydrated:
+  file_owner: Administrators
   git:
     pkg:
       name: git
-  pkg:
+    root_dir: C:\Program Files\Git
+  script:
     name: dehydrated
+    script_dir: usr\bin
+    script_hash:
+      '0.6.5': a97b0d64d5ecc21549a58b714bb9017479b38b2e40ff51c04f1638e71291d138
+      '0.6.4': 070c3daf3686702c54feaae9e0c507b66097a76d32eda426af56640a2f036127
+    version: '0.6.5'
+
   rootgroup: root
   config: '/etc/dehydrated'
   service:

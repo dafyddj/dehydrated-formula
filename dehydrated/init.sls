@@ -3,7 +3,7 @@
 
 include:
   - .git
-#  - .package
+  - .script
 #  - .config
 #  - .service
 #  - .subcomponent
