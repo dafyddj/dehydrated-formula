@@ -1,7 +1,7 @@
 .. _readme:
 
 dehydrated-formula
-================
+==================
 
 |img_travis| |img_sr| |img_pc|
 
@@ -73,7 +73,7 @@ Available states
    :local:
 
 ``dehydrated``
-^^^^^^^^^^^^
+^^^^^^^^^^^^^^
 
 *Meta-state (This is a state that includes other states)*.
 
@@ -82,24 +82,24 @@ manages the dehydrated configuration file and then
 starts the associated dehydrated service.
 
 ``dehydrated.package``
-^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
 
 This state will install the dehydrated package only.
 
 ``dehydrated.config``
-^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
 
 This state will configure the dehydrated service and has a dependency on ``dehydrated.install``
 via include list.
 
 ``dehydrated.service``
-^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
 
 This state will start the dehydrated service and has a dependency on ``dehydrated.config``
 via include list.
 
 ``dehydrated.clean``
-^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^
 
 *Meta-state (This is a state that includes other states)*.
 
@@ -109,24 +109,24 @@ removes the configuration file and
 then uninstalls the package.
 
 ``dehydrated.service.clean``
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This state will stop the dehydrated service and disable it at boot time.
 
 ``dehydrated.config.clean``
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This state will remove the configuration of the dehydrated service and has a
 dependency on ``dehydrated.service.clean`` via include list.
 
 ``dehydrated.package.clean``
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This state will remove the dehydrated package and has a depency on
 ``dehydrated.config.clean`` via include list.
 
 ``dehydrated.subcomponent``
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 *Meta-state (This is a state that includes other states)*.
 
@@ -134,13 +134,13 @@ This state installs a subcomponent configuration file before
 configuring and starting the dehydrated service.
 
 ``dehydrated.subcomponent.config``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This state will configure the dehydrated subcomponent and has a
 dependency on ``dehydrated.config`` via include list.
 
 ``dehydrated.subcomponent.config.clean``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This state will remove the configuration of the dehydrated subcomponent
 and reload the dehydrated service by a dependency on

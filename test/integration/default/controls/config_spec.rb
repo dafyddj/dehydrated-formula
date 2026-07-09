@@ -22,10 +22,10 @@ control 'dehydrated configuration' do
     its('content') { should include '"service": {"name": "' }
     its('content') do
       should include(
-        '"tofs": {"files_switch": ["any/path/can/be/used/here", "id", '\
-        '"roles", "osfinger", "os", "os_family"], "source_files": '\
-        '{"dehydrated-config-file-file-managed": ["example.tmpl.jinja"], '\
-        '"dehydrated-subcomponent-config-file-file-managed": '\
+        '"tofs": {"files_switch": ["any/path/can/be/used/here", "id", ' \
+        '"roles", "osfinger", "os", "os_family"], "source_files": ' \
+        '{"dehydrated-config-file-file-managed": ["example.tmpl.jinja"], ' \
+        '"dehydrated-subcomponent-config-file-file-managed": ' \
         '["subcomponent-example.tmpl.jinja"]}'
       )
     end

@@ -3,15 +3,20 @@
 ###############################################################################
 # (A) Update `FORMULA` with `${nextRelease.version}`
 ###############################################################################
+
 sed -i -e "s_^\(version:\).*_\1 ${1}_" FORMULA
 
 
 ###############################################################################
-# (B) Use `m2r` to convert automatically produced `.md` docs to `.rst`
+# (B) Update `AUTHORS.md`
 ###############################################################################
 
-# Install `m2r`
-sudo -H pip install m2r
+maintainer contributor \
+  --ignore-contributors dependabot[bot],renovate[bot],semantic-release-bot
+
+###############################################################################
+# (C) Use `m2r` to convert automatically produced `.md` docs to `.rst`
+###############################################################################
 
 # Copy and then convert the `.md` docs
 cp ./*.md docs/
